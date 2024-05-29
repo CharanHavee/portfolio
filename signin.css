@@ -1,0 +1,116 @@
+body{
+  font-size: 20pt;
+  font-family: cursive, Helvetica, sans-serif;
+}
+header{
+  text-align: center;
+  background: skyblue;
+  padding-bottom: 7px;
+}
+#navbar>ul{
+  margin-top: 7%;
+  list-style-type: none;
+  display: flex;
+}
+li a{
+  color:black;
+  font-weight: bolder;
+  border-radius: 10%;
+  padding: 7px 14px;
+}
+li a:hover{
+  color:white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.login{
+  background-image: url("/backgrounds/60259-web-design-illustration.gif");
+  background-size: cover;
+  margin:20%;
+  padding: 10%;
+}
+.form-group {
+  position: relative;
+  font-size: 15px;
+  color: #666;
+}
+.form-group + .form-group {
+  margin-top: 30px;
+}
+.form-group .form-label {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 5px;
+  transition: 0.3s;
+}
+.form-group .form-control {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  height: 35px;
+  background: none;
+  border: none;
+  padding: 5px 0;
+  transition: 0.3s;
+  border-bottom: 1px solid #777;
+  color: #555;
+}
+.form-group .form-control:invalid {
+  outline: none;
+}
+.form-group .form-control:focus, .form-group .form-control:valid {
+  outline: none;
+  box-shadow: 0 1px #00fffc;
+  border-color: #00fffc;
+}
+.form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
+  font-size: 12px;
+  color: #000;
+  transform: translateY(-15px);
+}
+.btn{
+  margin-top: 2%;
+  background: transparent;
+  border: solid 1px deepskyblue;
+}
+.btn:hover{
+  box-shadow:2px 2px 0 deepskyblue ;
+}
+
+#foot{
+  background-color:skyblue;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  color: black;
+}
+.foot1{
+  color:black;
+}
+.foot1 a{
+  color: black;
+}
+.foot1 a:hover{
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+.foot2{
+  margin-top: 10%;
+}
+.foot2 a{
+  color: black;
+}
+.foot2 a:hover{
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 924px) {
+  body{
+    font-size:12pt;
+    font-family: cursive, Helvetica, sans-serif;
+  }
+}

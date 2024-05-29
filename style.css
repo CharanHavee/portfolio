@@ -1,0 +1,189 @@
+body{
+  font-size: 20pt;
+  font-family: cursive, Helvetica, sans-serif;
+}
+header{
+  text-align: center;
+  background: skyblue;
+  padding-bottom: 7px;
+}
+#navbar>ul{
+  margin-top: 7%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+li a{
+  color:black;
+  font-weight: bolder;
+  border-radius: 10%;
+  padding: 7px 14px;
+}
+li a:hover{
+  color:white;
+  background-color: black;
+  text-decoration: none;
+}
+#navbar ul button{
+  background: deepskyblue;
+  border: none;
+  border-radius: 50%;
+}
+/*Nav Bar Style ended*/
+.Home{
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+#pic{
+  width: 60%;
+  margin-left: 20%;
+  filter:drop-shadow(2px 2px 1px black);
+  animation: edit 3s 1;
+}
+@keyframes edit{
+  0%{
+    opacity: 0%;
+    filter: grayscale(100%);
+    transform: translateX(-10rem);
+  }
+  25%{
+    filter: grayscale(75%);
+    opacity: 25%;
+  
+  }
+  50%{
+    filter: grayscale(50%);
+    opacity: 50%;
+  
+  }
+  75%{
+    filter: grayscale(25%);
+    opacity: 75%;
+    
+  }
+  100%{
+    filter: grayscale(0);
+    opacity: 100%;
+  }
+}
+.home2{
+  margin-top: 10%;
+  margin-left: 5%;
+  font-weight: bolder;
+  animation: paraedit 3s 1;
+}
+@keyframes paraedit{
+  0%{
+    opacity: 0%;
+  }
+  25%{
+    opacity: 25%;
+  }
+  50%{
+    opacity: 50%;
+  }
+  75%{
+    opacity: 75%;
+  }
+  100%{
+    transform: translateX(0rem);
+  }
+}
+/*about section CSS started here....*/
+
+.about{
+  display: block;
+  text-align: left;
+}
+.illustration{
+  display: flex;
+}
+#bgpic{
+  transform: rotateY(180deg)
+}
+/*Skills & Hobbies section CSS started here*/
+
+.certifications {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+.anime{
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+.movies{
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+.card{
+  position: relative;
+  left: 0px;
+  width: 6rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 5px 12px black;
+  flex: 0.25;
+}
+.card img{
+  position: relative;
+  object-fit: cover;
+}
+.card:hover{
+  flex: 2;
+  cursor: pointer;
+  box-shadow: 0 5px 12px deepskyblue;
+  border-radius:1rem;
+}
+/*anime  css ended here*/
+
+
+#foot{
+  background-color:skyblue;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  color: black;
+}
+.foot1{
+  color:black;
+}
+.foot1 a{
+  color: black;
+}
+.foot1 a:hover{
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+.foot2{
+  margin-top: 10%;
+}
+.foot2 a{
+  color: black;
+}
+.foot2 a:hover{
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*media query for mobiles*/
+@media (max-width: 924px) {
+  body{
+    font-size: 12pt;
+  }
+  .Home{
+    margin-top: 10%;
+    display: block;
+  }
+  .home2{
+    margin-left: 20%;
+  }
+
+}
